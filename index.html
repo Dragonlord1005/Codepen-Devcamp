@@ -3,40 +3,63 @@
 
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Codepen</title>
 
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Ubuntu+Condensed" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/517eb960cd.js" crossorigin="anonymous"></script>
-</head>
-<body>
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Ubuntu+Condensed"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/517eb960cd.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="/styles/index.css" />
+  </head>
+  <body>
     <div class="navigation-wrapper">
-        <div class="nav-logo">
-            <img src="images/logos/codepen-wordmark-display-inside-white_10x_163987fcdd.png" alt="Codepen">
-        </div>
-        <!-- So above our links next to the codepen logo is a yellow Explore -->
-        <div class="nav-explore">
-            <a>Explore</a>
-        </div>
+      <div class="nav-logo">
+        <img
+          src="images/logos/codepen.png"
+          alt="Codepen"
+        />
+      </div>
+      <!-- So above our links next to the codepen logo is a yellow Explore -->
+      <div class="nav-explore">
+        <div id="explore">Explore</div>
         <div class="links-wrapper">
-            <a class="nav-link">Pens</a>
-            <a class="nav-link">Projects</a>
-            <a class="nav-link">Posts</a>
-            <a class="nav-link">Collections</a>
-            <a class="nav-link">
-                Spark
-                <i class="fas fa-caret-down"></i>
-            </a>
-            <!-- Spacing needs to be here -->
-            <div class="spacing-30"></div>
-            <button id="create">
-                
-            </button>
+          <div class="nav-link">Pens</div>
+          <div class="nav-link">Projects</div>
+          <div class="nav-link">Posts</div>
+          <div class="nav-link">Collections</div>
+          <div class="nav-link">
+            Spark
+            <i class="fa-solid fa-angle-down"></i>
+          </div>
         </div>
+      </div>
+
+      <!-- We notice some sort of spacing between this and the rest of the links, we must also distinguish a difference between the set of links somehow -->
+
+      <div class="nav-buttons">
+        <!-- This won't be part of the links wrapper as the styling is too different, instead we will make a new links wrapper which we will name nav-buttons -->
+        <!-- Links -->
+        <!-- they don't need their own class as we will be doing styling in nav-buttons as nothing else will be in here -->
+        <a>
+          Create
+          <i class="fa-solid fa-angle-down"></i>
+        </a>
+        <a><i class="fa-solid fa-magnifying-glass"></i></a>
+        <a>Log In</a>
+        <a>Sign Up</a>
+      </div>
     </div>
-</body>
+  </body>
 </html>
